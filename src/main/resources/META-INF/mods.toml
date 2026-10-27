@@ -1,0 +1,29 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "MIT"
+issueTrackerURL = ""
+
+[[mods]]
+modId = "armorhide"
+version = "1.0.1"
+displayName = "Armor Hide"
+authors = "vince"
+description = '''
+双端盔甲隐藏（Forge 1.20.1 移植版）：
+服务端 = 所有玩家互相看不到对方盔甲；客户端（可选）= 自己也看不到自己的盔甲。
+均保留鞘翅和披风，手持 / 副手正常，不影响实际装备数值与耐久。
+'''
+
+[[dependencies.armorhide]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.armorhide]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1]"
+ordering = "NONE"
+side = "BOTH"

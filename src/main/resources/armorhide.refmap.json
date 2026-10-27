@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "local/armorhide/mixin/ServerEntityArmorMixin": {
+      "entity": "f_8510_",
+      "sendPairingData": "m_289200_"
+    },
+    "local/armorhide/mixin/LivingEntityArmorMixin": {
+      "handleEquipmentChanges": "m_21142_"
+    },
+    "local/armorhide/mixin/client/HumanoidArmorLayerMixin": {
+      "renderArmorPiece": "m_117118_"
+    }
+  },
+  "data": {
+    "searge": {
+      "local/armorhide/mixin/ServerEntityArmorMixin": {
+        "entity": "f_8510_",
+        "sendPairingData": "m_289200_"
+      },
+      "local/armorhide/mixin/LivingEntityArmorMixin": {
+        "handleEquipmentChanges": "m_21142_"
+      },
+      "local/armorhide/mixin/client/HumanoidArmorLayerMixin": {
+        "renderArmorPiece": "m_117118_"
+      }
+    }
+  }
+}

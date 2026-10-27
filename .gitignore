@@ -1,0 +1,42 @@
+# eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
+
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+# gradle
+build
+.gradle
+
+# other
+eclipse
+run
+
+# Files from Forge MDK
+forge*changelog.txt
+
+# build / run logs（构建日志不进仓库）
+*.log
+*.log.gz
+*.bak
+*.bak-*
+
+# IDE / 其它
+.vscode
+run-data
+gradle.properties.bak
+
+# Forge MDK 模板自带的文件，本项目不提交
+README.txt
+LICENSE.txt
+CREDITS.txt
+changelog.txt
