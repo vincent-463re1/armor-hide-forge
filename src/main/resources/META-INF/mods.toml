@@ -6,7 +6,7 @@ issueTrackerURL = ""
 [[mods]]
 modId = "armorhide"
 version = "1.0.1"
-displayName = "Armor Hide"
+displayName = "Armor Hide Forge"
 authors = "vince"
 description = '''
 双端盔甲隐藏（Forge 1.20.1 移植版）：

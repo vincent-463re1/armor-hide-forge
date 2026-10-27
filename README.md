@@ -1,4 +1,4 @@
-# Armor Hide (Forge 1.20.1 port)
+# Armor Hide Forge
 
 隐藏玩家身上的盔甲，鞘翅、披风、手持物品不受影响。服务端装了全服生效，客户端装了能隐藏自己的。
 Hide player armor on both sides. Elytra, capes and held items are unaffected.
