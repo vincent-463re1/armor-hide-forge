@@ -37,12 +37,6 @@ Hide player armor on both sides. Elytra, capes and held items are unaffected.
 | 主手 / 副手 | 手持物品正常显示 |
 | 护甲属性 | 减伤、附魔效果全部生效 |
 
-### 已知副作用
-
-- **戴南瓜头不再遮挡视野**：遮挡黑边是客户端根据头盔槽画的，客户端收不到头盔数据就不再画
-- **海龟壳的水下呼吸仍然有效**（服务端属性，不受影响）
-- 少数依赖“玩家装备数据”的第三方 HUD / 渲染 mod 可能显示异常
-
 ### 环境要求
 
 | 项目 | 版本 |
@@ -58,16 +52,6 @@ Hide player armor on both sides. Elytra, capes and held items are unaffected.
 2. **客户端**（隐藏自己的盔甲）：同一个 jar 放进客户端 `mods/`
 3. 同一个 jar 两端通用，Mixin 会按环境自动分流加载
 
-### 构建
-
-需要 JDK 17：
-
-```bash
-./gradlew build
-```
-
-产物在 `build/libs/armorhide-<version>.jar`。
-
 ### 实现方式（以及和原作的关系）
 
 原作是 Minecraft 26.3 + Fabric，1.20.1 上的类名和方法名都不一样，所以三个注入点全部换过：
@@ -79,8 +63,6 @@ Hide player armor on both sides. Elytra, capes and held items are unaffected.
 | 自己看不见自己 | `HumanoidMobRenderer#extractHumanoidRenderState` | `HumanoidArmorLayer#renderArmorPiece`（1.20.1 没有 render state 机制） |
 
 两处服务端注入都是 `@ModifyArg`，只改**发给客户端的那个 `ClientboundSetEquipmentPacket`** 里的列表参数，服务端实体上的装备数据一个字节都不动。
-
-有一个 1.20.1 特有的坑：`ClientboundSetEquipmentPacket` 在列表为空时只写出实体 id、不写任何槽位字节，客户端读包时会越界断线。所以过滤后如果列表变空，会塞一条「空槽位」占位，既保证包结构合法，客户端还会顺手把这个槽清空。
 
 ---
 
