@@ -42,8 +42,8 @@ Hide player armor on both sides. Elytra, capes and held items are unaffected.
 | 项目 | 版本 |
 |---|---|
 | Minecraft | 1.20.1 |
-| Forge | 47.x（开发用 47.2.0，运行时 47.4.6 已验证） |
-| Java | 17 |
+| Forge | 47.x |
+| Java | 17-21 |
 | 依赖 | 无 |
 
 ### 安装
