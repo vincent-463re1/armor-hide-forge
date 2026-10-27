@@ -89,15 +89,7 @@ Elytra (chest slot when the item is an elytra), capes, main/off hand items, and 
 
 ### Requirements
 
-Minecraft 1.20.1, Forge 47.x, Java 17, no dependencies.
-
-### Building
-
-```bash
-./gradlew build
-```
-
-Output: `build/libs/armorhide-<version>.jar`
+Minecraft 1.20.1, Forge 47.x, Java 17-21, no dependencies.
 
 ### Differences from the original
 
